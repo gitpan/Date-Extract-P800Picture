@@ -9,12 +9,13 @@ Module::Build->new(
     requires    => {
         'perl'                 => '5.14.0',
         'POSIX'                => 0,
-        'Error'                => 0,
+        'Exception::Class'     => 0,
         'English'              => 0,
         'Readonly'             => 0,
         'DateTime'             => 0,
         'Moose'                => 0,
         'namespace::autoclean' => 0,
     },
+	configure_requires => { 'Module::Build' => 0.40 },
     build_requires => { 'Test::More' => 0.81, },
 )->create_build_script;

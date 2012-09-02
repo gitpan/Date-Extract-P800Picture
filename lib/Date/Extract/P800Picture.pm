@@ -5,7 +5,7 @@ use 5.014000;
 use Moose;
 use namespace::autoclean -also => qr/^__/sxm;
 
-our $VERSION = '0.101';
+our $VERSION = '0.102';
 
 use POSIX ();
 use English qw( -no_match_vars);
@@ -138,7 +138,7 @@ the filename of pictures taken with a Sony-Ericsson P800 camera phone.
 
 =head1 VERSION
 
-This document describes Date::Extract::P800Picture version 0.101.
+This document describes Date::Extract::P800Picture version 0.102.
 
 =head1 SYNOPSIS
 
@@ -203,9 +203,12 @@ L<Test::More|Test::More>
 
 =over 4
 
-To avoid ambiguity between more common date notations and the Sony-Ericsson
-P800's date notation this is a separate module. It's highly unlikely that in
-any other setting "2000" means the first of January 2002.
+=item * To avoid ambiguity between more common date notations and the
+Sony-Ericsson P800's date notation this is a separate module. It's highly
+unlikely that in any other setting "2000" means the first of January 2002.
+
+=item * For perls earlier than 5.14 version 0.04 of this module provides the
+same functionality in a perl 5.6 compatible way.
 
 =back
 
