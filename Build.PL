@@ -15,7 +15,7 @@ Module::Build->new(
         'Moose'                => 0,
         'namespace::autoclean' => 0,
     },
-    configure_requires => { 'Module::Build' => 0.40 },
+    configure_requires => { 'Module::Build' => 0.40, },
     build_requires     => { 'Test::More'    => 0.81, },
     recommends         => {
         'File::Basename'          => 0,
@@ -23,8 +23,13 @@ Module::Build->new(
         'Log::Log4perl'           => 0,
         'Pod::Usage'              => 0,
         'Pod::Usage::CommandLine' => 0,
+        'Module::Signature'       => 0,
     },
-    sign => 1,
-    meta_merge =>
-      { repository => 'https://github.com/ipenburg/Date-Extract-P800Picture', },
+    script_files => [ qw(bin/p800date bin/p800exif), ],
+    sign         => 1,
+    meta_merge   => {
+        resources => {
+            repository => 'https://github.com/ipenburg/Date-Extract-P800Picture'
+        }
+    },
 )->create_build_script;

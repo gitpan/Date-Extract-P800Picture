@@ -1,5 +1,5 @@
 {
-   "abstract" : "class for extracting the date and the hour from",
+   "abstract" : "extract the date from Sony Ericsson P800 pictures.",
    "author" : [
       "Roland van Ipenburg <ipenburg@xs4all.nl>"
    ],
@@ -29,6 +29,7 @@
             "File::Basename" : "0",
             "Getopt::Long" : "0",
             "Log::Log4perl" : "0",
+            "Module::Signature" : "0",
             "Pod::Usage" : "0",
             "Pod::Usage::CommandLine" : "0"
          },
@@ -47,19 +48,21 @@
    "provides" : {
       "Date::Extract::P800Picture" : {
          "file" : "lib/Date/Extract/P800Picture.pm",
-         "version" : "0.103"
+         "version" : "0.104"
       },
       "Date::Extract::P800Picture::Exceptions" : {
          "file" : "lib/Date/Extract/P800Picture/Exceptions.pm",
-         "version" : "0.103"
+         "version" : "0.104"
       }
    },
    "release_status" : "stable",
    "resources" : {
       "license" : [
          "http://dev.perl.org/licenses/"
-      ]
+      ],
+      "repository" : {
+         "url" : "https://github.com/ipenburg/Date-Extract-P800Picture"
+      }
    },
-   "version" : "0.103",
-   "x_repository" : "https://github.com/ipenburg/Date-Extract-P800Picture"
+   "version" : "0.104"
 }

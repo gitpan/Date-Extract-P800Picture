@@ -1,4 +1,4 @@
-package Date::Extract::P800Picture;    # -*- cperl; cperl-indent-level: 4 -*-
+package Date::Extract::P800Picture 0.104; # -*- cperl; cperl-indent-level: 4 -*-
 
 use strict;
 use warnings;
@@ -8,8 +8,6 @@ use 5.014000;
 
 use Moose;
 use namespace::autoclean '-also' => qr/^__/sxm;
-
-our $VERSION = '0.103';
 
 use POSIX ();
 use English qw( -no_match_vars);
@@ -153,14 +151,15 @@ sub _parse {
 
 __END__
 
+=encoding utf8
+
 =head1 NAME
 
-Date::Extract::P800Picture - class for extracting the date and the hour from
-the filename of pictures taken with a Sony Ericsson P800 camera phone.
+Date::Extract::P800Picture - extract the date from Sony Ericsson P800 pictures.
 
 =head1 VERSION
 
-This document describes Date::Extract::P800Picture version 0.103.
+This document describes Date::Extract::P800Picture version 0.104.
 
 =head1 SYNOPSIS
 
